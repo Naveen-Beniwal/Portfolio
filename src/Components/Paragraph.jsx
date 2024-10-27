@@ -122,13 +122,13 @@ const Character = ({ children, range, progress }) => {
   return (
     <span className={styles.characterContainer}>
       <span
-        className={`text-base md:text-lg lg:text-xl xl:text-5xl 2xl:text-[10rem] ${styles.shadow} px-1 md:px-2 lg:px-3`}
+        className={`text-base md:text-lg lg:text-xl xl:text-5xl 2xl:text-[5rem] ${styles.shadow} px-1 md:px-2 lg:px-3`}
       >
         {children}
       </span>
       <motion.span
         style={{ opacity, color }}
-        className={`text-base md:text-lg lg:text-xl xl:text-5xl 2xl:text-[10rem] px-1 md:px-2 lg:px-3`}
+        className={`text-base md:text-lg lg:text-xl xl:text-5xl 2xl:text-[5rem] px-1 md:px-2 lg:px-3`}
       >
         {children}
       </motion.span>

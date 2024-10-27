@@ -1,4 +1,4 @@
-
+/* 
 .aboutText {
     font-family: "Rubik Wet Paint", system-ui;
     font-weight: 400;
@@ -21,8 +21,8 @@
     position: relative;
     padding: 20px;
    
-}
-
+} */
+/* 
 .body,
 .mask {
     height: auto;
@@ -50,8 +50,8 @@
     mask-repeat: no-repeat;
     color: black;
     z-index: 1000;
-}
-
+} */
+/* 
 @media (min-width: 640px) {
 
     .body,
@@ -90,4 +90,4 @@
         font-size: 4rem;
        
     }
-} 
+}  */

@@ -66,16 +66,17 @@ import React, { useState } from "react";
 import heroimg from "../assets/img.png"; // You may or may not need this import
 import styles from "./HeroPage.module.css";
 import { motion } from "framer-motion";
+import Projects from "./Projects.jsx";
 import Navbar from "./Navbar.jsx";
 
 const HeroPage = () => {
   const [isHovered, setIsHovered] = useState(false);
-  const size = isHovered ? 650 : 40;
+  const size = isHovered ? 450 : 40;
   const { x, y } = useMousePosition();
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div
         className={`${styles.main} flex flex-col items-center justify-center h-screen`}
       >
@@ -100,7 +101,7 @@ const HeroPage = () => {
           }}
         >
           <p
-            className={`text-4xl md:text-2xl lg:text-3xl xl:text-5xl 2xl:text-[8rem] text-black ${styles.para}`}
+            className={`text-4xl md:text-2xl lg:text-3xl xl:text-5xl 2xl:text-[7rem] text-black ${styles.para}`}
             style={{
               fontFamily: "'Rubik Wet Paint', system-ui",
               fontWeight: 400,
@@ -113,7 +114,7 @@ const HeroPage = () => {
         </motion.div>
         <div className={`${styles.body} text-center`}>
           <p
-            className={`text-4xl md:text-2xl lg:text-3xl xl:text-5xl 2xl:text-[8rem] text-center ${styles.para}`}
+            className={`text-4xl md:text-2xl lg:text-3xl xl:text-5xl 2xl:text-[7rem] text-center ${styles.para}`}
             style={{
               fontFamily: "'Rubik Wet Paint', system-ui",
               fontWeight: 400,

@@ -10,3 +10,34 @@ body {
 #141414
 #EB5939
 */
+html {
+    scroll-behavior: smooth;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flip-container {
+    perspective: 1000px;
+}
+
+.flip-container .flipper {
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+.perspective {
+    perspective: 1000px;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
