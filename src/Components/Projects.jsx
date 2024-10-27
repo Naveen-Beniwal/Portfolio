@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { useEffect, useState } from "react";
 import netflix from "../assets/netflix.mp4";
+import music from "../assets/music.mp4";
 import sidcup from "../assets/sidcup.mp4";
 import { motion } from "framer-motion";
 import styles from "./Projects.module.css";
@@ -17,6 +18,7 @@ const projectData = [
       "Code Structuring for Scalability",
       "Responsive Design",
     ],
+    link: "https://netflix-clone-0hnj.onrender.com",
     video: netflix,
   },
   {
@@ -30,7 +32,16 @@ const projectData = [
       "GSAP Animation",
       "Responsive Design",
     ],
+    link: "https://naveen-beniwal.github.io/my_project_1/",
     video: sidcup, // Replace with your actual video link if available
+  },
+  {
+    title: "React Music Player",
+    description:
+      "A React-based music player application where I learned the fundamentals of React, including props, and enhanced my styling skills with Bootstrap. This project showcases a seamless user interface that allows users to play their favorite music tracks effortlessly.",
+    skills: ["React", "Props", "Bootstrap", "JavaScript", "Responsive Design"],
+    link: "https://naveen-beniwal.github.io/Music-Player-App/", // Replace with your actual project link
+    video: music, // Replace with your actual video link if available
   },
 ];
 
@@ -69,13 +80,16 @@ const Section1 = ({ project }) => {
       </h2>
       <div className="flex justify-center gap-4 w-full">
         <div className="relative border-4 border-gray-500 rounded-xl bg-black shadow-lg hover:shadow-2xl transition-all duration-500 w-full max-w-[1000px] md:max-w-[1100px] lg:max-w-[1200px] aspect-video overflow-hidden hover:scale-105 hover:rotate-1 hover:shadow-[0_0_30px_#EB5939]">
-          <motion.video
-            src={project.video}
-            autoPlay
-            loop
-            muted
-            className="w-full h-full rounded-md object-cover transition-transform duration-500 hover:scale-105"
-          />
+          <a href={project.link}>
+            {" "}
+            <motion.video
+              src={project.video}
+              autoPlay
+              loop
+              muted
+              className="w-full h-full rounded-md object-cover transition-transform duration-500 hover:scale-105"
+            />
+          </a>
         </div>
       </div>
     </motion.div>
