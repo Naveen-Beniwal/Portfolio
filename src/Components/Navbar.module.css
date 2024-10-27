@@ -1,0 +1,75 @@
+
+ .container {
+     display: flex;
+     justify-content: space-between;
+     padding: 20px 100px;
+     /* Adjust padding as necessary */
+     position: absolute;
+     top: 0;
+     /* Adjust if needed */
+     left: 0;
+     /* Adjust if needed */
+     right: 0;
+     /* Adjust if needed */
+     /* z-index: -10 */
+     /* To keep it above other content */
+ }
+
+  .githubIcon {
+    /* z-index: 199; */
+     width: 100px;
+     
+     height: auto;
+   
+     pointer-events: none;
+    
+
+ } 
+  .githubIcon:hover {
+     /* transform: scale(1.2); */
+     /* Increase size */
+     mix-blend-mode: difference;
+     /* Adjust blending mode */
+    /* z-index: 0; */
+     width: 100px;
+     
+     height: auto;
+   
+     /* pointer-events: none; */
+    
+
+ } 
+ 
+ .details {
+     display: flex;
+     flex-direction: column;
+     color: #e0d0b6;
+     align-items: center;
+     
+     /* Center items horizontally */
+ }
+
+ .navItem {
+     cursor: pointer;
+     /* Change cursor to pointer for clickable items */
+     transition: color 0.3s;
+     /* Smooth color transition */
+    font-size: 1.4rem;
+    padding:0px; 
+    margin-right: -70px;
+ }
+
+ .navItem:hover {
+     color: #eb5939;
+     /* Change color on hover */
+ }
+ .githubIcon {
+     transition: transform 0.3s ease, filter 0.3s ease;
+ }
+
+ .hovered {
+     transform: scale(1.2);
+     /* Increase size */
+     mix-blend-mode: difference;
+     /* Adjust blending mode */
+ }

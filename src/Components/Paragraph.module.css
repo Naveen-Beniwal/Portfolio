@@ -1,0 +1,118 @@
+.paragraph {
+    display: inline-flex;
+    flex-wrap: wrap;
+    line-height: 1;
+   
+    font-size: rem;
+   
+    gap: 0px;
+   
+    font-family: "Teko", system-ui;
+   
+    font-weight: 400;
+    font-style: normal;
+    padding: 30px;
+    /* width: 80%; */
+  
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+@media (min-width: 1024px) {
+ 
+         .characterContainer span {
+             padding: 8.2px;
+             
+             margin: 4px;
+            
+         }
+} 
+
+/* @media (max-width: 768px) {
+    .paragraph {
+        font-size: 2rem;
+        
+        padding: 20px;
+        width: 95%;
+        
+    }
+        .characterContainer span {
+            padding: 0;
+           
+            margin: -3px;
+           
+        }
+                .characterContainer span {
+                    padding: 0;
+                   
+                    margin: -3px;
+                    
+                }
+} */
+
+/* @media (max-width: 480px) {
+    .paragraph {
+        font-size: 0.9rem;
+       
+        padding: 10px;
+        width: 100%;
+        
+    }
+        .characterContainer {
+            position: relative;
+            display: inline-flex;
+            letter-spacing: -1.05em;
+            
+            padding: 0;
+            margin: -12px;
+        }
+                .characterContainer span {
+                    padding: 0;
+                    
+                    margin: -3px;
+                   
+                }
+} */
+
+.word {
+    display: inline-flex;
+    gap: 0;
+    /* No gap between characters */
+}
+
+.characterContainer {
+    position: relative;
+    display: inline-flex;
+    letter-spacing: -0.55em;
+    /* Tighter character spacing */
+    padding: 0;
+    margin: 0;
+}
+
+/* Adjust character spacing for smaller screens */
+/* @media (max-width: 480px) {
+    .characterContainer {
+        letter-spacing: -0.9em;
+        
+    }
+        .characterContainer span {
+            padding: 0;
+          
+            margin: 0;
+            
+        }
+} */
+
+.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgba(186, 182, 182, 0.3);
+    /* Shadow color */
+    z-index: -1;
+    /* Position shadow behind text */
+    transform: translateY(2px);
+    /* Shadow alignment */
+}
