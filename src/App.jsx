@@ -20,10 +20,10 @@
 
 // export default App;
 import React from "react";
-import HeroPage from "./components/HeroPage";
-import AboutMe from "./components/Aboutme";
-import Projects from "./components/Projects";
-import Navbar from "./components/Navbar";
+import HeroPage from "./Components/HeroPage";
+import Navbar from "./Components/Navbar";
+import AboutMe from "./Components/Aboutme";
+import Projects from "./Components/Projects";
 import Thanks from "./Components/Thanks";
 const App = () => {
   return (
