@@ -1,0 +1,52 @@
+.skill-card {
+    position: relative;
+    width: 100%;
+    height: 320px; /* Maintain height for uniformity */
+    perspective: 1000px;
+    margin: 1.5rem 0; /* Adjust margins */
+}
+
+.skill-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+/* Card Front and Back styles */
+.skill-card-front,
+.skill-card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backface-visibility: hidden;
+    border-radius: 0.5rem; /* Rounded corners */
+}
+
+/* Card Front styles */
+.skill-card-front {
+    background-color: #AA9E8B;
+    border: 2px solid #EB5939; /* Add border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+/* Card Back styles */
+.skill-card-back {
+    background-color: #EB5939;
+    border: 2px solid #AA9E8B; /* Add border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transform: rotateY(180deg); /* Flip the card */
+}
+
+/* Hover effect */
+.skill-card:hover .skill-card-inner {
+    transform: rotateY(180deg); /* Rotate to show back */
+}
+
+/* Add bottom margin to the section to prevent overlap */
+section {
+    margin-bottom: 4rem; /* Adjust this value as needed */
+}

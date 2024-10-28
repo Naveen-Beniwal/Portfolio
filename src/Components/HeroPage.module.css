@@ -1,14 +1,4 @@
-/* 
-.main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    position: relative; 
-  
-} */
+
 
  .body,
  .mask {
@@ -20,8 +10,8 @@
      justify-content: center;
      color: #AA9E8B;
     
-     font-size: 64px;
-     line-height: 1.2;
+     /* font-size: 64px; */
+     line-height: 1.1;
      /* Keeps lines close but readable */
      cursor: default;
      padding: 20px;
@@ -30,7 +20,8 @@
  }
 
  .para {
-     font-family: "Rubik Wet Paint", system-ui;
+     /* font-family: "Rubik Wet Paint", system-ui; */
+     font-family: "Teko", system-ui;
      font-weight: 400;
      font-style: normal;
      text-align: center;
@@ -43,14 +34,14 @@
     
      /* font-size: 2.2rem; */
      
-     line-height: 1.5;
-     width: 70%;
+     /* line-height: 1.2; */
+     width: 72%;
      
  }
 
 .mask {
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 0;
     width: 100%;
     /* Makes the mask cover the full container */
@@ -65,4 +56,7 @@
     mask-size: cover;
     z-index: 1000;
     /* Cover ensures the mask scales to the element */
+}
+.socialContainer{
+    z-index: 1001;
 }

@@ -25,6 +25,7 @@ import Navbar from "./Components/Navbar";
 import AboutMe from "./Components/Aboutme";
 import Projects from "./Components/Projects";
 import Thanks from "./Components/Thanks";
+import Skills from "./Components/Skills";
 const App = () => {
   return (
     <div>
@@ -35,6 +36,7 @@ const App = () => {
       <div id="about">
         <AboutMe />
       </div>
+      <Skills></Skills>
       <div id="projects">
         <Projects />
       </div>

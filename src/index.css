@@ -41,3 +41,9 @@ html {
 .absolute {
     position: absolute;
 }
+*{
+    -webkit-font-smoothing: antialiased !important;
+}
+html {
+    scroll-behavior: smooth;
+}
