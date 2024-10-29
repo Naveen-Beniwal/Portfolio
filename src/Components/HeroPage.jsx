@@ -114,7 +114,7 @@ const HeroPage = () => {
           transition={{ type: "tween", duration: 0.18 }}
         >
           <p
-            className={`text-7xl md:text-9xl lg:text-[11rem] xl:text-[13rem] 2xl:text-[11rem]  text-black ${styles.para}`}
+            className={`text-6xl md:text-8xl lg:text-[7rem] xl:text-[7rem] 2xl:text-[7rem]  text-black ${styles.para}`}
             style={{
               fontFamily: "'teko', system-ui",
               fontWeight: 400,
@@ -130,7 +130,7 @@ const HeroPage = () => {
         </motion.div>
         <div className={`${styles.body} text-center`}>
           <p
-            className={`text-7xl md:text-9xl lg:text-[11rem] xl:text-[13rem] 2xl:text-[11rem]  text-center  ${styles.para}`}
+            className={`text-6xl md:text-8xl lg:text-[7rem] xl:text-[7rem] 2xl:text-[7rem]  text-center  ${styles.para}`}
             style={{
               fontFamily: "'teko', system-ui",
               fontWeight: 400,

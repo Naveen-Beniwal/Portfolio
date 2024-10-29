@@ -8,12 +8,12 @@ import Navbar from "./Navbar.jsx";
 import Paragraph from "./Paragraph.jsx";
 
 const paragraph =
-  "I’m a web developer who crafts captivating projects, pixel by pixel.With a blend of hard work and humor ,I turn ideas into engaging experiences.Let’s create something inspiring together and make the web vibrant place!";
+  "I’m a web developer who crafts captivating projects, pixel by pixel.With a blend of hard work and humor ,I turn ideas into engaging experiences.";
 
 const Aboutme = () => {
   return (
     <>
-      <h1 className="text-4xl text-[#AA9E8B] text-center">ABOUT ME</h1>
+      <h1 className="text-3xl text-[#AA9E8B] text-center ">ABOUT ME</h1>
       <Paragraph value={paragraph}></Paragraph>
       {/* <div style={{ height: "100vh" }}></div> */}
     </>

@@ -1,21 +1,21 @@
-
+/* 
 .paragraph {
     display: inline-flex;
     flex-wrap: wrap;
-    line-height: 1;
+    line-height: 0.5;
    
-    font-size: rem;
+ 
    
     gap: 0px;
    
-    /* font-family: "Teko", system-ui; */
+    
     font-family: "avant garde","teko";
    
     font-weight: 400;
     font-style: normal;
     padding: 30px;
-    /* width: 80%; */
-  /* margin-left: 10vw; */
+    width: 80%;
+  margin-left: 10vw;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -27,15 +27,14 @@
 .word {
     display: inline-flex;
     margin-right: 0.8rem
-    /* gap: 3px; */
-    /* No gap between characters */
+    
 }
 
 .characterContainer {
     position: relative;
     display: inline-flex;
     letter-spacing: -1.5em;
-    /* Tighter character spacing */
+ 
     padding: 0;
     margin: 0;
 }
@@ -44,9 +43,62 @@
     top: 0;
     left: 0;
     color: rgba(186, 182, 182, 0.3);
-    /* Shadow color */
+
     z-index: -1;
-    /* Position shadow behind text */
+  
     transform: translateY(2px);
-    /* Shadow alignment */
+    
+} */
+.paragraph {
+    display: inline-flex;
+    flex-wrap: wrap;
+    line-height: 1.2;
+    /* Increase line-height for readability on smaller screens */
+    gap: 0px;
+    font-family: "avant garde", "teko";
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px;
+    width: 80%;
+    margin-left: 10vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    /* Responsive adjustments */
+    @media (max-width: 640px) {
+        width: 100%;
+        /* Full width on small screens */
+        margin-left: 0;
+        padding: 15px;
+    }
+}
+
+.word {
+    display: inline-flex;
+    margin-right: 0.5rem;
+    /* Adjust margin for tighter spacing on smaller screens */
+}
+
+.characterContainer {
+    position: relative;
+    display: inline-flex;
+    letter-spacing: -1em;
+    padding: 0;
+    margin: 0;
+
+    /* Responsive adjustments */
+    @media (max-width: 640px) {
+        letter-spacing: -0.75em;
+        /* Loosen character spacing slightly on small screens */
+    }
+}
+
+.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgba(186, 182, 182, 0.3);
+    z-index: -1;
+    transform: translateY(2px);
 }

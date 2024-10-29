@@ -17,11 +17,11 @@ const Navbar = () => {
       </div>
       <div className={`${styles.details}  text-[#AA9E8B] text-center z-10   `}>
         <nav>
-          <ul className="flex flex-col gap-1 font-[teko] text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+          <ul className="flex flex-col gap-1 font-[teko] text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl">
             <li>
               <a
                 href="#hero"
-                className="hover:text-red-500 transition-colors text-2xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl"
+                className="hover:text-red-500 transition-colors text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-2xl"
               >
                 Home
               </a>
@@ -29,7 +29,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#about"
-                className="hover:text-red-500 transition-colors text-2xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl"
+                className="hover:text-red-500 transition-colors text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-2xl"
               >
                 About Me
               </a>
@@ -37,7 +37,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#projects"
-                className="hover:text-red-500 transition-colors text-2xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl"
+                className="hover:text-red-500 transition-colors text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-2xl"
               >
                 Projects
               </a>
