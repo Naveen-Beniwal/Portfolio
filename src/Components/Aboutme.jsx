@@ -1,7 +1,7 @@
 "use client";
 import useMousePosition from "../utils/MouseMove.js";
 import React, { useState, useEffect } from "react";
-import heroimg from "../assets/img.png";
+// import heroimg from "../assets/img.png";
 import styles from "./Aboutme.module.css";
 import { motion } from "framer-motion";
 import Navbar from "./Navbar.jsx";
