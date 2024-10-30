@@ -19,7 +19,7 @@ const projectData = [
       "Code Structuring for Scalability",
       "Responsive Design",
     ],
-    link: "https://netflix-clone-0hnj.onrender.com",
+    link: "https://mernstackvideoplatform.onrender.com",
     video: netflix,
   },
   {
